@@ -1,0 +1,451 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9249298444.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-amber-200 m-4">
+    <nav class="flex items-center justify-between bg-white -m-4 p-4 fixed top-0 z-20 w-full">
+        <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/176/200/original/vector-abstract-company-logo-template-design-illustration.jpg" alt="logo" class="object-cover max-w-12 max-h-12" />
+        </div>
+        <!-- Menu for medium screens and larger -->
+        <div class="hidden lg:flex gap-12">
+            <ul class="flex flex-row gap-x-6">
+                <li><a href="index.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Home</a></li>
+                <li><a href="events.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Events</a></li>
+                <li><a href="#programs" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Program</a></li>
+                <li><a href="buy_tickets.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Buy Tickets</a></li>
+                <li><a href="teams" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Teams</a></li>
+                <li><a href="contact_us.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- Toggle button for small and medium screens -->
+        <div class="lg:hidden">
+            <button class="p-2" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Dropdown menu for small and medium screens -->
+    <div class="dropdown-menu flex flex-col gap-y-8 bg-white p-3 lg:hidden z-20 absolute w-full left-0 m-auto hidden">
+        <ul>
+            <li><a href="index.html" class="block text-black rounded-lg px-4 py-2 align-middle">Home</a></li>
+            <li><a href="events.html" class="block text-black rounded-lg px-4 py-2 align-middle">Tickets</a></li>
+            <li><a href="#programs" class="block text-black rounded-lg px-4 py-2 align-middle">Program</a></li>
+            <li><a href="buy_tickets.html" class="block text-black rounded-lg px-4 py-2 align-middle">Buy Tickets</a></li>
+            <li><a href="contact_us.html" class="block text-black rounded-lg px-4 py-2 align-middle">Contact us</a></li>
+        </ul>
+    </div>
+    
+    <!-- Slider Section -->
+    <main class="bg-amber-200 bg-opacity-80 w-full mt-16 lg:mt-20">
+        <div class="w-auto">
+            <div class="h-[70vh] bg-purple-900 object-cover relative overflow-hidden">
+                <div id="slider" class="w-full h-full">
+                    <img src="https://picsum.photos/800/800?random=1" class="w-full h-[100%] object-cover absolute transition-opacity duration-1000 opacity-100" alt="hero-section">
+                    <img src="https://picsum.photos/800/800?random=2" class="w-full h-[100%] object-cover absolute transition-opacity duration-1000 opacity-0" alt="hero-section">
+                    <img src="https://picsum.photos/800/800?random=3" class="w-full h-[100%] object-cover absolute transition-opacity duration-1000 opacity-0" alt="hero-section">
+                </div>
+                <!-- Navigation Buttons -->
+                <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">&#10094;</button>
+                <button id="next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">&#10095;</button>
+            </div>
+        </div>
+    
+    
+
+    <!-- popup section -->
+    <div class="popup fixed top-0 left-0 h-full w-full z-50 p-10 backdrop-blur-sm hidden opacity-0 transition-opacity duration-1000">
+        <div class="bg-slate-200 w-[450px] h-[350px] p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-r-8">
+            <button id="close" class="block mb-5 font-bold text-red-400 text-2xl right-0 ml-auto cursor-pointer">&times;</button>
+            <h1 class="font-bold mb-2">Special Event Ad!</h1>
+            <p>Join us for an exciting event! Don't miss out on the fun. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, dicta voluptates impedit a maiores voluptatem dolor ipsa mollitia quam excepturi eligendi vero hic laboriosam expedita iure tenetur labore aperiam inventore!</p>
+        </div>
+    </div>
+
+
+
+    
+    <div class="text-center m-4 p-2 border-4 border-blue-400 bg-gray-100">
+        <h1>Party Program</h1>
+        <p>Short Description</p>
+    </div>
+    <!-- <section class=" gap-4 m-4"> -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-8 justify-items-center">
+            <div class="py-10">
+                <div class="rounded-md overflow-hidden shadow-lg max-w-2xl">
+                    <img src="https://picsum.photos/500/500" alt="DJ photo" class="w-full">
+                </div>
+                <div class = "mt-4">
+                    <p class="text-gray-700 overflow-hidden max-h-16">To know more about events, click on "Read More"</p>
+                    <P class="descriptionText" >This is a brief description of the DJ event. These events often include traditional dance performances, local music concerts, and food festivals showcasing Nepali cuisine. Markets and streets are decorated with colorful lights and festive decorations, creating a joyful atmosphere</P>
+                    <button class="readMoreBtn mt-4 text-purple-700 font-bold hover:text-white hover:bg-purple-700 hover:shadow-lg transition-all duration-300 ease-in-out py-2 px-4 rounded">Read More</button>
+                </div>
+
+
+            </div>
+            <div class="py-10">
+                <div class="rounded-md overflow-hidden shadow-lg max-w-2xl">
+                    <img src="https://picsum.photos/500/500" alt="Pic of live music singer" class="w-full">
+                </div>
+                <div class = "mt-4">
+                    <p class="text-gray-700 overflow-hidden max-h-16">To know more about events, click on "Read More"</p>
+                    <P class="descriptionText" >This is a brief description of the DJ event. These events often include traditional dance performances, local music concerts, and food festivals showcasing Nepali cuisine. Markets and streets are decorated with colorful lights and festive decorations, creating a joyful atmosphere</P>
+                    <button class="readMoreBtn mt-4 text-purple-700 font-bold hover:text-white hover:bg-purple-700 hover:shadow-lg transition-all duration-300 ease-in-out py-2 px-4 rounded">Read More</button>
+                </div>
+            </div>
+            <div class="py-10">
+                <div class="rounded-md overflow-hidden shadow-lg max-w-2xl">
+                    <img src="https://picsum.photos/500/500" alt="Past event Dance Photo" class="w-full">
+                </div>
+                <div class = "mt-4">
+                    <p class="text-gray-700 overflow-hidden max-h-16">To know more about events, click on "Read More"</p>
+                    <P class="descriptionText" >This is a brief description of the DJ event. These events often include traditional dance performances, local music concerts, and food festivals showcasing Nepali cuisine. Markets and streets are decorated with colorful lights and festive decorations, creating a joyful atmosphere</P>
+                    <button class="readMoreBtn mt-4 text-purple-700 font-bold hover:text-white hover:bg-purple-700 hover:shadow-lg transition-all duration-300 ease-in-out py-2 px-4 rounded">Read More</button>
+                </div>
+            </div>
+            <div class="py-10">
+                <div class="rounded-md overflow-hidden shadow-lg max-w-2xl">
+                    <img src="https://picsum.photos/500/500" alt="Past event Party Photo" class="w-full">
+                </div>
+                <div class = "mt-4">
+                    <p class="text-gray-700 overflow-hidden max-h-16">To know more about events, click on "Read More"</p>
+                    <P class="descriptionText" >This is a brief description of the DJ event. These events often include traditional dance performances, local music concerts, and food festivals showcasing Nepali cuisine. Markets and streets are decorated with colorful lights and festive decorations, creating a joyful atmosphere</P>
+                    <button class="readMoreBtn mt-4 text-purple-700 font-bold hover:text-white hover:bg-purple-700 hover:shadow-lg transition-all duration-300 ease-in-out py-2 px-4 rounded">Read More</button>
+                </div>
+            </div>
+        </div>
+    <!-- </section> -->
+     <!-- <section> -->
+        <div class="grid md:grid-cols-2 h-[100%] gap-x-4 md:gap-x-6 lg:gap-x-8 mb-16">
+            <div class="flex flex-col gap-y-20 bg-gray-300 rounded p-3 h-[100%] text-center">
+                <h2>Whats Included</h2>
+                <p>Short Description</p>
+            </div>
+            <div class="flex flex-col gap-y-4 h-[100%]  mt-4 lg:mt-0">
+                <div class="bg-gray-300 text-center h-12 justify-center align-middle p-2">DJ</div>
+                <div class="bg-gray-300 text-center h-12 justify-center align-middle p-2">Live Music</div>
+                <div class="bg-gray-300 text-center h-12 justify-center align-middle p-2">Party</div>
+                <div class="bg-gray-300 text-center h-12 justify-center align-middle p-2">Fire work</div>
+                <div class="bg-gray-300 text-center h-12 justify-center align-middle p-2">Unlimited fun</div>
+            </div>
+        </div>
+     <!-- </section> -->
+    <!-- <section> -->
+        <div class="flex items-center my-8">
+            <div class="flex-grow border-t border-gray-500"></div>
+            <span class="mx-4 text-xl font-bold">Event Timeline</span>
+            <div class="flex-grow border-t border-gray-500"></div>
+        </div>
+        <section>
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 h-auto w-full">
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                    </div>
+                </div>
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                    </div>
+                </div>
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                    </div>
+                </div>
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                    </div>
+                </div>
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                    </div>
+                </div>
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                    </div>
+                </div>
+            </div>       
+            </div>
+        </section>        
+        <section class="text-center py-6">
+            <h2 class="text-xl md:text-3xl font-bold mb-4">Event starts in:</h2>
+            <div class="flex justify-center gap-2 sm:gap-4" id="countdown">
+                <div class="flex flex-col items-center">
+                    <span class="text-sm sm:text-lg lg:text-2xl font-medium">Days</span>
+                    <div class="bg-gray-200 text-purple-900 text-2xl sm:text-3xl font-bold rounded-lg p-2 sm:p-4 w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center">
+                        <span id="days">0</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-sm sm:text-lg lg:text-2xl font-medium">Hours</span>
+                    <div class="bg-gray-200 text-purple-900 text-2xl sm:text-3xl font-bold rounded-lg p-2 sm:p-4 w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center">
+                        <span id="hours">0</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-sm sm:text-lg lg:text-2xl font-medium">Minutes</span>
+                    <div class="bg-gray-200 text-purple-900 text-2xl sm:text-3xl font-bold rounded-lg p-2 sm:p-4 w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center">
+                        <span id="minutes">0</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-sm sm:text-lg lg:text-2xl font-medium">Seconds</span>
+                    <div class="bg-gray-200 text-purple-900 text-2xl sm:text-3xl font-bold rounded-lg p-2 sm:p-4 w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center">
+                        <span id="seconds">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ticket Section -->
+        <section id="tickets">
+            <h2 class="text-center text-xl font-bold">Get Your Ticket</h2>
+            <div class="py-4 grid md:grid-cols-3 lg:grid-cols-3 h-[70vh] gap-x-4 sm: gap-y-4">
+            <div style="background-image: url('https://www.eventbookings.com/wp-content/uploads/2023/12/7-ways-to-sell-more-concert-tickets-online-1024x584-1.jpg');  height: 100%; width: 100%" class="bg-gray-300 p-4 flex flex-col place-content-end place-items-center h-full bg-no-repeat bg-cover bg-center">
+                <button class="bg-purple-700 text-yellow-400 py-2 px-4 rounded-full hover:bg-purple-800 ">Buy Tickets</button>
+            </div>
+            <div style="background-image: url('https://www.eventbookings.com/wp-content/uploads/2023/12/7-ways-to-sell-more-concert-tickets-online-1024x584-1.jpg'); object-fit: cover;  height: 100%; width: 100%" class="bg-gray-300 p-4 flex flex-col place-content-end place-items-center h-full bg-no-repeat bg-cover bg-center">
+                <button class="bg-purple-700 text-yellow-400 py-2 px-4 rounded-full hover:bg-purple-800 ">Buy Tickets</button>
+            </div>
+            <div style="background-image: url('https://www.eventbookings.com/wp-content/uploads/2023/12/7-ways-to-sell-more-concert-tickets-online-1024x584-1.jpg'); object-fit: cover;  height: 100%; width: 100%" class="bg-gray-300 p-4 flex flex-col place-content-end place-items-center h-full bg-no-repeat bg-cover bg-center">
+                <button class="bg-purple-700 text-yellow-400 py-2 px-4 rounded-full hover:bg-purple-800 ">Buy Tickets</button>
+            </div>
+            </div>
+        </section>
+
+            <!-- Upcoming Events Section -->
+        <section id="events" class="mt-24">
+            <h3 class="font-bold text-xl text-center mt-12">Upcoming Events</h3>
+
+            <!-- Search Bar -->
+            <div class="search-container relative max-w-lg mx-auto mt-6">
+                <i class="fa fa-search absolute left-3 top-3 text-gray-400"></i>
+                <input type="text" id="search" class="w-full pl-10 pr-4 py-2 border-2 border-gray-300 rounded-full focus:outline-none focus:border-purple-600" placeholder="Search events..." onkeyup="filterEvents()">
+            </div>
+
+            <!-- Event List Container -->
+            <div id="event-list" class="grid md:grid-cols-3 w-full h-full gap-x-4 sm:gap-y-4 mt-6">
+                <!-- Dynamic content will be injected here from JavaScript -->
+            </div>
+        </section>
+  
+        
+        <section id="programs" class="mt-16">
+            <h3 class="text-center font-bold">Photo Gallery</h3>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-12 w-full">
+                <div class="relative bg-gray-300">
+                    <img src="https://picsum.photos/500/500" alt="image1" class="object-cover w-full h-full">
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="teams" class="mt-16">
+            <h4 class="text-center text-2xl font-bold">Our Team</h4>
+            <div class="grid md:grid-cols-5 gap-x-8 h-[100%] pt-12">
+                <div class="w-full h-full">
+                    <img src="https://picsum.photos/200/300" alt="image11" class="w-[100%] h-[80%]">
+                </div>
+                <div class="w-full h-full">
+                    <img src="https://picsum.photos/200/300" alt="image12" class="w-[100%] h-[80%]">
+                </div>
+                <div class="w-full h-full">
+                    <img src="https://picsum.photos/200/300" alt="image13" class="w-[100%] h-[80%]">
+                </div>
+                <div class="w-full h-full">
+                    <img src="https://picsum.photos/200/300" alt="image14" class="w-[100%] h-[80%]">
+                </div>
+                <div class="w-full h-full">
+                    <img src="https://picsum.photos/200/300" alt="image15" class="w-[100%] h-[80%]">
+                </div>
+            </div>
+            <!-- Sponsors Logo -->
+            <div class="border-t-2 mt-6">
+                <h4 class="font-bold text-2xl pt-6">Sponsors logo</h4>
+            </div>
+            <div class="flex overflow-hidden space-x-16 group">
+                <div class="flex space-x-16 animate-loop-scroll group-hover:paused">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8ee9f161-df19-4fa7-a2a6-edf9acf0e0d6?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 1" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/80480f8a-69ad-4c30-88ba-f4e7ee08fc51?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 2" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/140d376c-13f2-4823-b397-b3de733bf560?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 3" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ae217f1-b695-4661-bd3d-6440eebc2c5c?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 4" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/67017079-51e1-4245-9bf1-b5957eb66c74?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 5" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/515313ac-7ec9-4c6e-95db-80dac2f8b960?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 6" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c513fc32-3ab9-4cca-911e-0b2642ac7206?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 7" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5731a5a7-689f-49ae-abf1-6e6dc00c2043?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 8" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cb51d286-530f-42be-9e91-9c850522f127?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 9" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/44ba8437-f6fd-4a51-bfd3-262d7528f7a4?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 10" />
+                </div>
+                <div class="flex space-x-16 animate-loop-scroll group-hover:paused" aria-hidden="true">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8ee9f161-df19-4fa7-a2a6-edf9acf0e0d6?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 1" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/80480f8a-69ad-4c30-88ba-f4e7ee08fc51?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 2" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/140d376c-13f2-4823-b397-b3de733bf560?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 3" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ae217f1-b695-4661-bd3d-6440eebc2c5c?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 4" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/67017079-51e1-4245-9bf1-b5957eb66c74?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 5" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/515313ac-7ec9-4c6e-95db-80dac2f8b960?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 6" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c513fc32-3ab9-4cca-911e-0b2642ac7206?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 7" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5731a5a7-689f-49ae-abf1-6e6dc00c2043?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 8" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cb51d286-530f-42be-9e91-9c850522f127?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 9" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/44ba8437-f6fd-4a51-bfd3-262d7528f7a4?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&" class="max-w-none" alt="Image 10" />
+                </div>
+              </div>
+            
+            
+            <section id="conatcts" class="mt-16">
+                <h5 class="text-center font-bold text-lg md:text-xl lg:text-2xl">Contact Us</h5>
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-6">
+                    <div class="space-y-6">
+                        <input type="text" placeholder="Name" class="w-full h-10 sm:h-12 md:h-14 lg:h-16 px-3 border rounded-md">
+                        <input type="number" placeholder="Contact" class="w-full h-10 sm:h-12 md:h-14 lg:h-16 px-3 border rounded-md">
+                        <input type="email" placeholder="Email" class="w-full h-10 sm:h-12 md:h-14 lg:h-16 px-3 border rounded-md">
+                    </div>
+                    <div>
+                        <textarea placeholder="Message" class="w-full h-32 sm:h-40 md:h-48 lg:h-56 p-3 border rounded-md"></textarea>
+                    </div>
+                </div>
+                <div class="flex justify-end mt-6 w-full">
+                    <button class="bg-purple-700 text-yellow-400 rounded-full px-4 py-3 text-sm md:text-base lg:text-lg">Submit</button>
+                </div>
+                <div class="flex flex-col lg:flex-row mt-4">
+                    <!-- About Us Section -->
+                    <div class="w-full lg:w-1/2 h-100% bg-gray-100 p-8 flex justify-center">
+                        <div>
+                            <h2 class="text-4xl font-bold mb-4">About Us</h2>
+                            <p class="text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et culpa laudantium qui ratione, minima quisquam assumenda ea esse iure numquam, cum ullam. Perspiciatis ipsa possimus doloremque assumenda quod saepe incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nihil molestiae recusandae iure est dolorem temporibus deleniti adipisci mollitia dolore accusantium, nam animi tempora. Veritatis labore sunt doloribus culpa obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quasi? In deserunt placeat odio magnam nemo excepturi soluta omnis et accusamus neque aliquid cum, ducimus natus, vitae nesciunt fuga exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, expedita. Quam, qui fuga. At sint minus corrupti nisi consequatur aperiam? Quas deleniti cumque odit voluptatum. Assumenda commodi ratione a neque.</p>
+                            <!-- <button class="readMoreBtn mt-4 text-purple-700 font-bold hover:text-white hover:bg-purple-700 hover:shadow-lg transition-all duration-300 ease-in-out py-2 px-4 rounded">Read More</button> -->
+                        </div>
+                    </div>
+                
+                    <!-- Map Section -->
+                    <div class="w-full lg:w-1/2 lg:ml-4 mt-4 lg:mt-0">
+                        <iframe class="w-full h-64 lg:h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.4890516958653!2d85.2981585191351!3d27.67127582685856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb183b15555555%3A0xc4c3006397636ea9!2sMal%20Pokhari!5e0!3m2!1sen!2snp!4v1725348172928!5m2!1sen!2snp" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+            
+        <section class="mt-4">
+            <footer class="bg-purple-800 py-12">
+                <div class="container mx-auto px-4 text-white">
+                    <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
+                        <!-- Follow us Section -->
+                        <div class="text-center md:text-left flex-1">
+                            <h2 class="text-2xl md:text-2xl font-bold mb-4">Follow Us</h2>
+                            <ul class="flex justify-center md:justify-start space-x-4 text-2xl md:text-3xl">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Learn More Section -->
+                        <div class="text-center md:text-left flex-1">
+                            <h2 class="text-2xl md:text-2xl font-bold mb-4">Learn More</h2>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="index.html" class="text-lg hover:text-yellow-400">Home</a>
+                                </li>
+                                <li>
+                                    <a href="events.html" class="text-lg hover:text-yellow-400">Events</a>
+                                </li>
+                                <li>
+                                    <a href="program.html" class="text-lg hover:text-yellow-400">Program</a>
+                                </li>
+                                <li>
+                                    <a href="tickets.html" class="text-lg hover:text-yellow-400">Buy Tickets</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html" class="text-lg hover:text-yellow-400">Blogs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Help Section -->
+                        <div class="text-center md:text-left flex-1">
+                            <h2 class="text-2xl md:text-2xl font-bold mb-4">Help</h2>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#" class="text-lg hover:text-yellow-400">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-lg hover:text-yellow-400">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="contact_us.html" class="text-lg hover:text-yellow-400">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-lg hover:text-yellow-400">Write a Review</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Contact Us Section -->
+                        <div class="text-center md:text-left flex-1">
+                            <h2 class="text-2xl md:text-2xl font-bold mb-4">Contact Us</h2>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#" class="text-lg">Shankhamul, Kathmandu, Bagmati Province Nepal</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-lg">+977 9********** / **********</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-lg">www.khatraevents.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Khatra Events Section -->
+                        <div class="text-center md:text-left flex-1">
+                            <h2 class="text-2xl md:text-2xl font-bold mb-4">Khatra Events</h2>
+                            <p>© Copy right 2024 by KhatraTech.com</p>
+                            <p>Privacy Policy. Terms of Use</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        
+        
+                   
+        
+        
+            
+        
+        
+     
+        
+    <!-- </section> -->
+</main>
+</body>
+<style>
+    .descriptionText{
+        display: none;
+        padding: 10px;
+        color: rgb(243, 243, 243);
+        background-color: gray;
+        border: solid 1px rgb(75, 75, 75); 
+    }
+    .fade-in {
+        opacity: 0;
+    }
+    .show {
+        opacity: 1;
+    }
+    .hide {
+        opacity: 0;
+    }
+</style>
+<script src="script.js"></script>
+
+</html>
