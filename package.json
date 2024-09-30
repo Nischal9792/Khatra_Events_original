@@ -1,0 +1,11 @@
+{ "name": "khatra_events",
+"version": "0.5.8",
+"main": "src/index.html",
+  
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  }
+}
