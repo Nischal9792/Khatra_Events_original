@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9249298444.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-amber-200 m-4">
+    <nav class="flex items-center justify-between bg-white -m-4 p-4 fixed top-0 z-20 w-full h-auto">
+        <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/176/200/original/vector-abstract-company-logo-template-design-illustration.jpg" alt="logo" class="object-cover max-w-12 max-h-12" />
+        </div>
+        <!-- Menu for medium screens and larger -->
+        <div class="hidden lg:flex gap-12">
+            <ul class="flex flex-row gap-x-6">
+                <li><a href="index.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Home</a></li>
+                <li><a href="events.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Events</a></li>
+                <li><a href="#programs" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Program</a></li>
+                <li><a href="#tickets" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Buy Tickets</a></li>
+                <li><a href="teams.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Teams</a></li>
+                <li><a href="#contacts" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- Toggle button for small and medium screens -->
+        <div class="lg:hidden">
+            <button class="p-2" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Dropdown menu for small and medium screens -->
+    <div class="dropdown-menu flex flex-col gap-y-8 bg-white p-3 lg:hidden z-20 absolute w-full left-0 m-auto hidden">
+        <ul>
+            <li><a href="index.html" class="block text-black rounded-lg px-4 py-2 align-middle">Home</a></li>
+            <li><a href="events.html" class="block text-black rounded-lg px-4 py-2 align-middle">Tickets</a></li>
+            <li><a href="#programs" class="block text-black rounded-lg px-4 py-2 align-middle">Program</a></li>
+            <li><a href="#tickets" class="block text-black rounded-lg px-4 py-2 align-middle">Buy Tickets</a></li>
+            <li><a href="#contacts" class="block text-black rounded-lg px-4 py-2 align-middle">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div class="flex flex-col justify-center items-center h-screen">
+        <div class="w-full md:w-4/5 lg:w-3/4 xl:w-2/3 overflow-hidden relative">
+            <!-- Slider -->
+            <div id="slider" class="flex transition-transform duration-1000 ease-in-out">
+                <!-- Images will be injected here by JavaScript -->
+            </div>
+            <!-- Navigation Buttons -->
+            <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-green-800 text-white px-3 py-2">&laquo;</button>
+            <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-green-800 text-white px-3 py-2">&raquo;</button>
+        </div>
+        <!-- Pagination -->
+        <div id="pagination" class="flex space-x-2 mt-4">
+            <!-- Pagination dots will be injected here by JavaScript -->
+        </div>
+    </div>
+    <script src="program.js"></script>
+</body>
+</html>
