@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* SponorsLogo */
+@layer utilities {
+    .paused {
+      animation-play-state: paused;
+    }
+  }
