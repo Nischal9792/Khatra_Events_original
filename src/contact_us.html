@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9249298444.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-[#FFFFF0]">
+    <nav class="flex items-center justify-between bg-white p-4 fixed top-0 z-20 w-full h-auto">
+        <!-- Logo -->
+        <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/176/200/original/vector-abstract-company-logo-template-design-illustration.jpg" alt="logo" class="object-cover max-w-12 max-h-12" />
+        </div>
+        <!-- Menu for medium screens and larger -->
+        <div class="hidden lg:flex gap-12 justify-end flex-grow">
+            <ul class="flex flex-row gap-x-6">
+                <li><a href="index.html" class="bg-[#6A1B9A] text-white rounded-lg px-4 py-1">Home</a></li>
+                <li><a href="events.html" class="bg-[#6A1B9A] text-white rounded-lg px-4 py-1">Events</a></li>
+                <li><a href="#programs" class="bg-[#6A1B9A] text-white rounded-lg px-4 py-1">Program</a></li>
+                <li><a href="buy_tickets.html" class="bg-[#6A1B9A] text-white rounded-lg px-4 py-1">Buy Tickets</a></li>
+                <li><a href="contact_us.html" class="bg-[#6A1B9A] text-white rounded-lg px-4 py-1">Contact us</a></li>
+            </ul>
+        </div>
+    
+        <!-- Toggle button for small and medium screens -->
+        <div class="lg:hidden">
+            <button class="p-2" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+        </div>
+    </nav>   
+    <!-- Dropdown menu for small and medium screens -->
+    <div class="dropdown-menu flex flex-col gap-y-8 bg-white p-3 lg:hidden z-20 absolute w-full left-0 m-auto ">
+        <ul>
+            <li><a href="index.html" class="block text-black rounded-lg px-4 py-2">Home</a></li>
+            <li><a href="events.html" class="block text-black rounded-lg px-4 py-2">Tickets</a></li>
+            <li><a href="#programs" class="block text-black rounded-lg px-4 py-2">Program</a></li>
+            <li><a href="#tickets" class="block text-black rounded-lg px-4 py-2">Buy Tickets</a></li>
+            <li><a href="contact_us.html" class="block text-black rounded-lg px-4 py-2">Contact us</a></li>
+        </ul>
+    </div>
+
+    <section id="contacts" class="mt-24 px-20">
+        <h5 class="text-center font-bold text-lg md:text-4xl">Contact Us</h5>
+        <div class="flex gap-2 mx-9 mt-6">
+        <!-- <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 m-4"> -->
+            <div class="flex flex-col p-2">
+                <div class="space-y-6">
+                    <input type="text" placeholder="Name" class="bg-[#EDF0F5] w-full h-10 sm:h-12 md:h-14 lg:h-16 px-3 border rounded-md">
+                    <input type="number" placeholder="Contact" class="bg-[#EDF0F5] w-full h-10 sm:h-12 md:h-14 lg:h-16 px-3 border rounded-md">
+                    <input type="email" placeholder="Email" class="bg-[#EDF0F5] w-full h-10 sm:h-12 md:h-14 lg:h-16 px-3 border rounded-md">
+                    <textarea placeholder="Message" class="bg-[#EDF0F5] w-full h-32 sm:h-40 md:h-48 lg:h-56 p-3 border rounded-md"></textarea>
+                    <div class="flex justify-end mt-6 w-full">
+                        <button class="bg-[#6A1B9A] text-white rounded-full px-4 py-3 text-sm md:text-base lg:text-lg">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between w-[500px] gap-4 p-2">
+
+            <!-- Contact Details Section -->
+            <div class="bg-[#EDF0F5] p-4 rounded-lg h-full">
+                <h1 class="text-darkred text-2xl font-bold">Contact Details</h1>
+                <div class="text-[#000000]">
+                    <p class=" mt-2 text-lg font-semibold ">
+                        <a href="https://maps.app.goo.gl/wbtbQFxXQdwY8nLLA" class="flex items-center" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                        Sankhamul, Kathmandu
+                        </a>
+                </p>
+                <p class="mt-2 text-lg font-semibold">
+                    <a href="tel:984780000" class="flex items-center" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </svg>
+                    +977 98XXXXXXX
+                    </a>
+                </p>
+                <p class="mt-2 text-lg font-semibold">
+                    <a href="tel:984780000" class="flex items-center" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7">
+                        </svg>
+                    contact@khatratech.com
+                    </a>
+                </p>
+                <p class="mt-2 text-lg font-semibold">
+                    <a href="tel:984780000" class="flex items-center" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    wwww.khatraevents.com
+                    </a>
+                </p>
+                </div>
+                
+            </div>
+            <div class="bg-[#EDF0F5] p-6 rounded-lg shadow-lg flex flex-col text-center text-[#000000] ">
+                <h3 class="text-lg text-gray-700 font-semibold mb-2">Follow Us</h3>
+                <div class="flex gap-4 items-center justify-center">
+                    <a href="https://facebook.com" target="_blank" class="text-blue-600 hover:text-blue-800">
+                        <i class="fa-brands fa-facebook-square fa-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-blue-300 hover:text-blue-500">
+                        <i class="fa-brands fa-twitter-square fa-2xl"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="text-pink-600 hover:text-pink-800">
+                        <i class="fa-brands fa-instagram-square fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        
+        
+            <div class="flex flex-col lg:flex-row m-4">       
+                <!-- Map Section -->
+                <div class="w-full h-[600px] lg:ml-4 mt-4 lg:mt-0">
+                    <iframe class="w-full h-full lg:h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.4890516958653!2d85.2981585191351!3d27.67127582685856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb183b15555555%3A0xc4c3006397636ea9!2sMal%20Pokhari!5e0!3m2!1sen!2snp!4v1725348172928!5m2!1sen!2snp" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        
+    </section>
+
+    <section class="mt-4">
+        <footer class="bg-[#6A1B9A] py-12">
+            <div class="container mx-auto px-4 text-white">
+                <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
+                    <!-- Follow us Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4 text-yellow-600">Follow Us</h2>
+                        <ul class="flex justify-center md:justify-start space-x-4 text-2xl md:text-3xl">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Learn More Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4 text-yellow-600">Learn More</h2>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="index.html" class="text-lg hover:text-yellow-600">Home</a>
+                            </li>
+                            <li>
+                                <a href="events.html" class="text-lg hover:text-yellow-600">Events</a>
+                            </li>
+                            <li>
+                                <a href="program.html" class="text-lg hover:text-yellow-600">Program</a>
+                            </li>
+                            <li>
+                                <a href="buy_tickets.html" class="text-lg hover:text-yellow-600">Buy Tickets</a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="text-lg hover:text-yellow-600">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Help Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4 text-yellow-600">Help</h2>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-600">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-600">Help Center</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="text-lg hover:text-yellow-600">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-600">Write a Review</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contact Us Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4 text-yellow-600">Contact Us</h2>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-lg">Shankhamul, Kathmandu, Bagmati Province Nepal</a>
+                            </li>
+                            <li>
+                                <a href="tel:+977987654321" class="text-lg">+977 9**********</a> <a href="tel:+97796546521" class="text-lg">/ **********</a>
+                            </li>
+                            <li>
+                                <a href="https://khatraevents.com" class="text-lg">www.khatraevents.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Khatra Events Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4 text-yellow-600">Khatra Events</h2>
+                        <p>© Copy right 2024 by KhatraTech.com</p>
+                        <p>Privacy Policy. Terms of Use</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
