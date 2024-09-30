@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9249298444.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-amber-200">
+    <nav class="flex items-center justify-between bg-white p-4 fixed top-0 z-20 w-full h-auto">
+        <!-- Logo -->
+        <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/176/200/original/vector-abstract-company-logo-template-design-illustration.jpg" alt="logo" class="object-cover max-w-12 max-h-12" />
+        </div>
+        <!-- Menu for medium screens and larger -->
+        <div class="hidden lg:flex gap-12 justify-end flex-grow">
+            <ul class="flex flex-row gap-x-6">
+                <li><a href="index.html" class="bg-purple-900 text-white rounded-lg px-4 py-1">Home</a></li>
+                <li><a href="events.html" class="bg-purple-900 text-white rounded-lg px-4 py-1">Events</a></li>
+                <li><a href="#programs" class="bg-purple-900 text-white rounded-lg px-4 py-1">Program</a></li>
+                <li><a href="buy_tickets.html" class="bg-purple-900 text-white rounded-lg px-4 py-1">Buy Tickets</a></li>
+                <li><a href="teams.html" class="bg-purple-900 text-white rounded-lg px-4 py-1">Teams</a></li>
+                <li><a href="contact_us.html" class="bg-purple-900 text-white rounded-lg px-4 py-1">Contact us</a></li>
+            </ul>
+        </div>
+    
+        <!-- Toggle button for small and medium screens -->
+        <div class="lg:hidden">
+            <button class="p-2" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+        </div>
+    </nav>   
+    <!-- Dropdown menu for small and medium screens -->
+    <div class="dropdown-menu flex flex-col gap-y-8 bg-white p-3 lg:hidden z-20 absolute w-full left-0 m-auto ">
+        <ul>
+            <li><a href="index.html" class="block text-black rounded-lg px-4 py-2">Home</a></li>
+            <li><a href="events.html" class="block text-black rounded-lg px-4 py-2">Tickets</a></li>
+            <li><a href="#programs" class="block text-black rounded-lg px-4 py-2">Program</a></li>
+            <li><a href="#tickets" class="block text-black rounded-lg px-4 py-2">Buy Tickets</a></li>
+            <li><a href="contact_us.html" class="block text-black rounded-lg px-4 py-2">Contact us</a></li>
+        </ul>
+    </div>
+
+
+    <div class="mt-24 mb-8">
+        <h1 class="text-3xl text-center font-bold">Our Blogs</h1>
+    </div>
+    <!-- 1st row -->
+    <div class="container grid grid-cols-3 space-x-4 mx-auto">
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2024/08/27/065956-taste%20the%20culture%20blog%20thumbnail.png" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">AUGUST 27, 2024</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Sandesh Pandey</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">TASTE THE CULTURE 2024</h2>
+            </div>
+        </div>
+        <!-- second blog div -->
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2024/01/24/050302-169%20purna%20rai%20(1).png" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">January 24, 2024</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Purna Rai</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Elevate Your Valentine's: Purna Rai Live at 'Echoes of Love' Event</h2>
+            </div>
+        </div>
+        <!-- third blog -->
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2023/12/25/041549-WhatsApp%20Image%202023-12-25%20at%2010.00.13%20AM.jpeg" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">December 25, 2023</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Prajina</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Changa Music & Arts Festival 2024-Pokhara</h2>
+            </div>
+        </div>
+    </div>
+    <!-- 2nd row -->
+    <div class="container grid grid-cols-3 space-x-4 mx-auto mt-12">
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2023/12/10/054002-blog%20thumbnail.png" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">December 10, 2023</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">John Rai</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Experience the Soulful Melodies of John Chamling Rai Live in Kathmandu</h2>
+            </div>
+        </div>
+        <!-- second blog div -->
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2023/11/09/032727-Vineet%20singh%20169%20(2).png" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">November 9, 2023</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Vineet Singh</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">VINEET SINGH performing live in Nepal</h2>
+            </div>
+        </div>
+        <!-- third blog -->
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2023/10/03/011519-SWOOPNA%20SUMAN%20&%20THE%20ASTERS%20(1).png" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">October 3, 2023</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Satish Ghalan</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">ACE EXPRESSION 2023: A Spectacular Celebration of Art and Music in Kathmandu</h2>
+            </div>
+        </div>
+    </div>
+    <!-- 3rd row -->
+    <div class="container grid grid-cols-3 space-x-4 mx-auto mt-12">
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2023/09/03/081526-WAA%20size%202%20.png" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">September 3, 2023</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Aajay</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Working as Angels: Charity Gala</h2>
+            </div>
+        </div>
+        <!-- second blog div -->
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2023/09/01/082712-Screenshot%202023-09-01%20at%202.11.49%20PM.png" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">September 1, 2023</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Jetshen Dohna Lama</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Jetshen Dohna Lama: Debut Performance Live in Nepal</h2>
+            </div>
+        </div>
+        <!-- third blog -->
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2023/08/11/115556-shilpa.jpg" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">AUGUST 11, 2023</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Shilpa Rao</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Shilpa Rao Takes the Stage Live in Prive, Nepal</h2>
+            </div>
+        </div>
+    </div>
+    <!-- 4th row -->
+    <div class="container grid grid-cols-3 space-x-4 mx-auto mt-12">
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2023/08/08/122856-aw.jpeg" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">AUGUST 8, 2023</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Hari</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Kailash Kher Live in Nepal</h2>
+            </div>
+        </div>
+        <!-- second blog div -->
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2023/08/04/103030-Nabin%20K%20Bhattari%20thumbnail.jpeg" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">AUGUST 4, 2023</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Nabin K Bhattarai</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Nabin K Bhattarai - Live in Pokhara</h2>
+            </div>
+        </div>
+        <!-- third blog -->
+        <div>
+            <div class="w-100 h-64 bg-gray-200 overflow-hidden rounded-lg">
+                <img src="https://cdn.ticketsanjal.com/images/2023/08/02/051006-Screenshot%202023-08-02%20at%2010.54.23%20AM.png" class="w-full h-full object-cover" alt="Taste The Culture">
+            
+            </div>
+            <div class="mb-1 mt-4 flex text-xs md:text-base items-center gap-6 font-semibold tracking-wide text-primary-red">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <span class="text-red-500 text-sm mb-2">AUGUST 2, 2023</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f50000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    <span class="text-red-500 text-sm mb-2">Swoopna Suman</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Swoopna Suman and the Asters- Live in Pokhara</h2>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <section class="mt-4">
+        <footer class="bg-purple-800 py-12">
+            <div class="container mx-auto px-4 text-white">
+                <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
+                    <!-- Follow us Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4">Follow Us</h2>
+                        <ul class="flex justify-center md:justify-start space-x-4 text-2xl md:text-3xl">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Learn More Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4">Learn More</h2>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="index.html" class="text-lg hover:text-yellow-400">Home</a>
+                            </li>
+                            <li>
+                                <a href="events.html" class="text-lg hover:text-yellow-400">Events</a>
+                            </li>
+                            <li>
+                                <a href="program.html" class="text-lg hover:text-yellow-400">Program</a>
+                            </li>
+                            <li>
+                                <a href="buy_tickets.html" class="text-lg hover:text-yellow-400">Buy Tickets</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-400">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Help Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4">Help</h2>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-400">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-400">Help Center</a>
+                            </li>
+                            <li>
+                                <a href="contact_us.html" class="text-lg hover:text-yellow-400">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-400">Write a Review</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contact Us Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4">Contact Us</h2>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-lg">Shankhamul, Kathmandu, Bagmati Province Nepal</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg">+977 9********** / **********</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg">www.khatraevents.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Khatra Events Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4">Khatra Events</h2>
+                        <p>© Copy right 2024 by KhatraTech.com</p>
+                        <p>Privacy Policy. Terms of Use</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
