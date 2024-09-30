@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9249298444.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-amber-200">
+    <nav class="flex items-center justify-between bg-white -m-4 p-4 fixed top-0 z-20 w-full">
+        <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/176/200/original/vector-abstract-company-logo-template-design-illustration.jpg" alt="logo" class="object-cover max-w-12 max-h-12" />
+        </div>
+        <!-- Menu for medium screens and larger -->
+        <div class="hidden lg:flex gap-12">
+            <ul class="flex flex-row gap-x-6">
+                <li><a href="index.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Home</a></li>
+                <li><a href="events.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Events</a></li>
+                <li><a href="#programs" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Program</a></li>
+                <li><a href="#tickets" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Buy Tickets</a></li>
+                <li><a href="teams" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Teams</a></li>
+                <li><a href="contact_us.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- Toggle button for small and medium screens -->
+        <div class="lg:hidden">
+            <button class="p-2" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Dropdown menu for small and medium screens -->
+    <div class="dropdown-menu flex flex-col gap-y-8 bg-white p-3 lg:hidden z-20 absolute w-full left-0 m-auto  hidden">
+        <ul>
+            <li><a href="index.html" class="block text-black rounded-lg px-4 py-2 align-middle">Home</a></li>
+            <li><a href="events.html" class="block text-black rounded-lg px-4 py-2 align-middle">Tickets</a></li>
+            <li><a href="#programs" class="block text-black rounded-lg px-4 py-2 align-middle">Program</a></li>
+            <li><a href="#tickets" class="block text-black rounded-lg px-4 py-2 align-middle">Buy Tickets</a></li>
+            <li><a href="contact_us.html" class="block text-black rounded-lg px-4 py-2 align-middle">Contact us</a></li>
+        </ul>
+    </div>
+
+    <!-- Ticket Section -->
+    <section id="tickets">
+        <div class="mt-16">
+            <h2 class="text-center text-xl font-bold">Get Your Ticket</h2>
+        </div>
+        
+        <div class="py-4 grid md:grid-cols-3 lg:grid-cols-3 h-[70vh] gap-x-4 sm: gap-y-4 m-4">
+        <div style="background-image: url('https://www.eventbookings.com/wp-content/uploads/2023/12/7-ways-to-sell-more-concert-tickets-online-1024x584-1.jpg');  height: 100%; width: 100%" class="bg-gray-300 p-4 flex flex-col place-content-end place-items-center h-full bg-no-repeat bg-cover bg-center">
+            <button class="bg-purple-700 text-yellow-400 py-2 px-4 rounded-full hover:bg-purple-800 ">Buy Tickets</button>
+        </div>
+        <div style="background-image: url('https://www.eventbookings.com/wp-content/uploads/2023/12/7-ways-to-sell-more-concert-tickets-online-1024x584-1.jpg'); object-fit: cover;  height: 100%; width: 100%" class="bg-gray-300 p-4 flex flex-col place-content-end place-items-center h-full bg-no-repeat bg-cover bg-center">
+            <button class="bg-purple-700 text-yellow-400 py-2 px-4 rounded-full hover:bg-purple-800 ">Buy Tickets</button>
+        </div>
+        <div style="background-image: url('https://www.eventbookings.com/wp-content/uploads/2023/12/7-ways-to-sell-more-concert-tickets-online-1024x584-1.jpg'); object-fit: cover;  height: 100%; width: 100%" class="bg-gray-300 p-4 flex flex-col place-content-end place-items-center h-full bg-no-repeat bg-cover bg-center">
+            <button class="bg-purple-700 text-yellow-400 py-2 px-4 rounded-full hover:bg-purple-800 ">Buy Tickets</button>
+        </div>
+        </div>
+    </section>
+
+    <section class="mt-4">
+        <footer class="bg-purple-800 py-12">
+            <div class="container mx-auto px-4 text-white">
+                <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
+                    <!-- Follow us Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4">Follow Us</h2>
+                        <ul class="flex justify-center md:justify-start space-x-4 text-2xl md:text-3xl">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Learn More Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4">Learn More</h2>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="index.html" class="text-lg hover:text-yellow-400">Home</a>
+                            </li>
+                            <li>
+                                <a href="events.html" class="text-lg hover:text-yellow-400">Events</a>
+                            </li>
+                            <li>
+                                <a href="program.html" class="text-lg hover:text-yellow-400">Program</a>
+                            </li>
+                            <li>
+                                <a href="buy_tickets.html" class="text-lg hover:text-yellow-400">Buy Tickets</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-400">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Help Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4">Help</h2>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-400">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-400">Help Center</a>
+                            </li>
+                            <li>
+                                <a href="contact_us.html" class="text-lg hover:text-yellow-400">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg hover:text-yellow-400">Write a Review</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contact Us Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4">Contact Us</h2>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-lg">Shankhamul, Kathmandu, Bagmati Province Nepal</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg">+977 9********** / **********</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-lg">www.khatraevents.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Khatra Events Section -->
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-2xl md:text-2xl font-bold mb-4">Khatra Events</h2>
+                        <p>© Copy right 2024 by KhatraTech.com</p>
+                        <p>Privacy Policy. Terms of Use</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
