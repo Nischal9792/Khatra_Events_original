@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9249298444.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-amber-200 m-4">
+    <nav class="flex items-center justify-between bg-white -m-4 p-4 fixed top-0 z-20 w-full h-auto">
+        <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/176/200/original/vector-abstract-company-logo-template-design-illustration.jpg" alt="logo" class="object-cover max-w-12 max-h-12" />
+        </div>
+        <!-- Menu for medium screens and larger -->
+        <div class="hidden lg:flex gap-12">
+            <ul class="flex flex-row gap-x-6">
+                <li><a href="index.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Home</a></li>
+                <li><a href="events.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Events</a></li>
+                <li><a href="#programs" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Program</a></li>
+                <li><a href="#tickets" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Buy Tickets</a></li>
+                <li><a href="teams.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Teams</a></li>
+                <li><a href="#contacts" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- Toggle button for small and medium screens -->
+        <div class="lg:hidden">
+            <button class="p-2" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Dropdown menu for small and medium screens -->
+    <div class="dropdown-menu flex flex-col gap-y-8 bg-white p-3 lg:hidden z-20 absolute w-full left-0 m-auto hidden">
+        <ul>
+            <li><a href="index.html" class="block text-black rounded-lg px-4 py-2 align-middle">Home</a></li>
+            <li><a href="events.html" class="block text-black rounded-lg px-4 py-2 align-middle">Tickets</a></li>
+            <li><a href="#programs" class="block text-black rounded-lg px-4 py-2 align-middle">Program</a></li>
+            <li><a href="#tickets" class="block text-black rounded-lg px-4 py-2 align-middle">Buy Tickets</a></li>
+            <li><a href="#contacts" class="block text-black rounded-lg px-4 py-2 align-middle">Contact us</a></li>
+        </ul>
+    </div>
+    <style>
+        /* Slider styles */
+        .slider {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            height: 80%;
+        }
+        .slide {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .pagination button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+        .pagination button.active {
+            background-color: #333;
+        }
+    </style>
+    <!-- <div class="slide-track">
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+
+
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/300/300" alt="">
+        </div>
+
+    </div> -->
+    <div class="bg-gray-100 h-screen flex items-center justify-center">
+        <div class="w-full md:w-3/4 lg:w-1/2">
+            <div id="slider" class="slider">
+                <div class="slide"><img src="https://picsum.photos/300/300" alt="image11" class="w-full h-full"></div>
+                <div class="slide"><img src="https://picsum.photos/300/300" alt="image12" class="w-full h-full"></div>
+                <div class="slide"><img src="https://picsum.photos/300/300" alt="image13" class="w-full h-full"></div>
+                <div class="slide"><img src="https://picsum.photos/300/300" alt="image14" class="w-full h-full"></div>
+                <div class="slide"><img src="https://picsum.photos/300/300" alt="image15" class="w-full h-full"></div>
+            </div>
+            <div id="pagination" class="pagination"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
